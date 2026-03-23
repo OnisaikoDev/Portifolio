@@ -1,4 +1,4 @@
-// Wait for DOM to load
+
 document.addEventListener('DOMContentLoaded', () => {
     initTypedEffect();
     initStarfield();
@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initMobileNav();
 });
 
-// Typed effect for hero section
+
 function initTypedEffect() {
     const typedEl = document.getElementById('typed-text');
     if (!typedEl) return;
@@ -46,7 +46,7 @@ function initTypedEffect() {
     type();
 }
 
-// Starfield animation for background canvas
+
 function initStarfield() {
     const canvas = document.getElementById('bg-canvas');
     if (!canvas) return;
@@ -54,7 +54,7 @@ function initStarfield() {
     let width, height;
     const numStars = 120;
     const stars = [];
-    // Get accent colour from CSS variable
+
     const accentColor = getComputedStyle(document.documentElement).getPropertyValue('--accent') || '#00c853';
 
     function resize() {
@@ -101,7 +101,7 @@ function initStarfield() {
     update();
 }
 
-// Convert hex colour to RGB object
+
 function hexToRgb(hex) {
     let c = hex.trim();
     if (c.startsWith('#')) c = c.substring(1);
@@ -116,7 +116,7 @@ function hexToRgb(hex) {
     };
 }
 
-// Reveal elements when they enter the viewport
+
 function initRevealOnScroll() {
     const reveals = document.querySelectorAll('.reveal');
     const options = {
@@ -135,7 +135,7 @@ function initRevealOnScroll() {
     });
 }
 
-// Highlight navigation links based on scroll position
+
 function initNavHighlight() {
     const navLinks = document.querySelectorAll('nav a.nav-link');
     const sections = document.querySelectorAll('section');
@@ -161,7 +161,7 @@ function initNavHighlight() {
     onScroll();
 }
 
-// Collapse mobile navigation on link click and toggle menu
+
 function initMobileNav() {
     const navToggle = document.getElementById('nav-toggle');
     const navLinks = document.querySelectorAll('nav ul li a');
