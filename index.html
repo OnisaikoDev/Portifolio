@@ -60,11 +60,19 @@
             <div class="about-info">
                 <div class="info-item">
                     <h3>Idade</h3>
-                    <p>25 anos</p>
+                    <p><span id="idade"></span> anos</p>
+                    <script>
+                        const anoNascimento = 1999;
+                        const anoAtual = new Date().getFullYear();
+  
+                        const idade = anoAtual - anoNascimento;
+
+                        document.getElementById("idade").textContent = idade;
+                    </script>
                 </div>
                 <div class="info-item">
                     <h3>Experiência</h3>
-                    <p>1 ano</p>
+                    <p>2 anos</p>
                 </div>
             </div>
         </div>
