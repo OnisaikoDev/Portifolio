@@ -1,4 +1,4 @@
-/* Global variables and resets */
+
 * {
     margin: 0;
     padding: 0;
@@ -26,14 +26,14 @@ body {
     overflow-x: hidden;
 }
 
-/* Container helper */
+
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Header and navigation */
+
 header {
     position: fixed;
     top: 0;
@@ -80,7 +80,7 @@ nav a.active {
     color: var(--accent);
 }
 
-/* Mobile nav toggle */
+
 .nav-toggle {
     display: none;
 }
@@ -118,7 +118,7 @@ nav a.active {
     top: 8px;
 }
 
-/* Hero Section */
+
 .hero-section {
     position: relative;
     height: 100vh;
@@ -191,7 +191,7 @@ nav a.active {
     transform: translateX(3px);
 }
 
-/* About Section */
+
 .about-section {
     padding: 6rem 0;
     background: #0f1724;
@@ -239,7 +239,7 @@ nav a.active {
     font-weight: 500;
 }
 
-/* Expertise Section */
+
 .expertise-section {
     padding: 6rem 0;
     background: var(--bg-color);
@@ -287,7 +287,7 @@ nav a.active {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* Projects Section */
+
 .projects-section {
     padding: 6rem 0;
     background: #0f1724;
@@ -323,8 +323,7 @@ nav a.active {
     position: relative;
 }
 
-/* Placeholder gradients for project images */
-/* Project images using actual screenshots */
+
 .project-image.dreams {
     background-image: url('assets/dreams.jpg');
     background-size: cover;
@@ -388,7 +387,7 @@ nav a.active {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* Experience Section */
+
 .experience-section {
     padding: 6rem 0;
     background: var(--bg-color);
@@ -426,8 +425,6 @@ nav a.active {
 
 .timeline-year {
     flex-shrink: 0;
-    /* Increase the width and right padding so the year labels have breathing room
-       and don't sit too close to the timeline bullets. */
     width: 100px;
     text-align: right;
     font-weight: 600;
@@ -467,7 +464,7 @@ nav a.active {
     border-radius: 50%;
 }
 
-/* Contact Section */
+
 .contact-section {
     padding: 6rem 0;
     background: #0f1724;
@@ -488,7 +485,6 @@ nav a.active {
 
 .contact-grid {
     display: grid;
-    /* Always display two columns on larger screens for symmetry */
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     max-width: 800px;
@@ -534,7 +530,7 @@ nav a.active {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* Footer */
+
 footer {
     background: #071016;
     color: var(--text-muted);
@@ -543,7 +539,7 @@ footer {
     font-size: 0.8rem;
 }
 
-/* Reveal Animations */
+
 .reveal {
     opacity: 0;
     transform: translateY(40px);
@@ -555,7 +551,7 @@ footer {
     transform: translateY(0);
 }
 
-/* Starfield canvas positioning */
+
 #bg-canvas {
     position: fixed;
     top: 0;
@@ -565,7 +561,7 @@ footer {
     z-index: -1;
 }
 
-/* Responsive design */
+
 @media (max-width: 768px) {
     nav ul {
         position: absolute;
