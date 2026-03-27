@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Matheus Daniel Rosa, desenvolvedor front-end focado em interfaces modernas, responsivas e experiências digitais de alto impacto.">
+    <title>Matheus Daniel Rosa | Desenvolvedor Front-end</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pO8KWbkt8PI3r3lUdW2Xafwd/ZXmTvsjFhjAloR3Nml4mXEI+uNjVbFU3VIrrHn1SAvR7C0yKZ4H3Gq9l3c2Ug==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+</head>
+<body>
+    <div class="page-shell">
+        <canvas id="bg-canvas" aria-hidden="true"></canvas>
+        <div class="bg-grid" aria-hidden="true"></div>
+
+        <header class="site-header">
+            <div class="container header-container">
+                <a class="logo" href="#hero" aria-label="Página inicial de Matheus Daniel Rosa">MD</a>
+
+                <nav class="site-nav" aria-label="Navegação principal">
+                    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                    <label for="nav-toggle" class="nav-toggle-label" aria-label="Abrir menu">
+                        <span></span>
+                    </label>
+
+                    <ul class="nav-list">
+                        <li><a href="#hero" class="nav-link active">Início</a></li>
+                        <li><a href="#about" class="nav-link">Sobre</a></li>
+                        <li><a href="#expertise" class="nav-link">Especialidades</a></li>
+                        <li><a href="#projects" class="nav-link">Projetos</a></li>
+                        <li><a href="#experience" class="nav-link">Experiência</a></li>
+                        <li><a href="#contact" class="nav-link">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section id="hero" class="hero-section">
+                <div class="container hero-layout">
+                    <div class="hero-copy reveal">
+                        <span class="eyebrow">
+                            <span class="status-dot"></span>
+                            Transformando sua ideia em realidade!
+                        </span>
+                        <h1>Front-end com visual moderno e código organizado.</h1>
+                        <p class="hero-description">
+                            Crio interfaces responsivas, elegantes e pensadas para passar mais valor logo no primeiro impacto.
+                        </p>
+
+                        <div class="typed-wrapper">
+                            <span class="typed-prefix">Especialidade:</span>
+                            <span id="typed-text"></span>
+                            <span class="cursor">_</span>
+                        </div>
+
+                        <div class="hero-actions">
+                            <a href="#projects" class="cta-button primary">Ver projetos</a>
+                            <a href="#contact" class="cta-button secondary">Falar comigo</a>
+                        </div>
+
+                        <div class="hero-links">
+                            <a href="https://github.com/OnisaikoDev" target="_blank" rel="noreferrer">GitHub</a>
+                            <a href="https://instagram.com/matheusd_end" target="_blank" rel="noreferrer">Instagram</a>
+                            <a href="mailto:matheusd.rosa00@gmail.com">E-mail</a>
+                        </div>
+                    </div>
+
+                    <aside class="hero-panel reveal" aria-label="Resumo profissional">
+                        <div class="floating-orb orb-one" aria-hidden="true"></div>
+                        <div class="floating-orb orb-two" aria-hidden="true"></div>
+                        <div class="panel-card panel-highlight">
+                            <p class="panel-label">Front-end Developer</p>
+                            <h2>Design limpo, interação e performance.</h2>
+                            <p>
+                                Landing pages, sites e interfaces com estrutura clara e acabamento profissional.
+                            </p>
+                        </div>
+
+                        <div class="metrics-grid">
+                            <article class="metric-card">
+                                <strong id="age-value">0</strong>
+                                <span>anos</span>
+                            </article>
+                            <article class="metric-card">
+                                <strong>2+</strong>
+                                <span>anos de prática</span>
+                            </article>
+                            <article class="metric-card">
+                                <strong>100%</strong>
+                                <span>foco em front-end</span>
+                            </article>
+                            <article class="metric-card">
+                                <strong>UI</strong>
+                                <span>visão de experiência</span>
+                            </article>
+                        </div>
+
+                        <div class="tech-radar" aria-hidden="true">
+                            <div class="radar-core"></div>
+                            <span class="radar-ring ring-one"></span>
+                            <span class="radar-ring ring-two"></span>
+                            <span class="radar-ring ring-three"></span>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+
+            <section id="about" class="about-section">
+                <div class="container section-block reveal">
+                    <div class="section-heading center">
+                        <span class="section-tag">Sobre</span>
+                        <h2>Um perfil criativo que busca construir produtos com identidade.</h2>
+                    </div>
+
+                    <div class="about-grid">
+                        <div class="about-text">
+                            <p>
+                                Atuo no desenvolvimento front-end com foco em interfaces que equilibram impacto visual,
+                                usabilidade e boa organização de código. Gosto de transformar ideias em páginas que passam
+                                uma sensação profissional já no primeiro contato.
+                            </p>
+                            <p>
+                                Minha base começou com HTML, CSS e JavaScript, e hoje evolui com React, Next.js e um olhar
+                                cada vez mais apurado para UI, responsividade e detalhes que valorizam a marca de cada projeto.
+                            </p>
+                        </div>
+
+                        <div class="about-cards">
+                            <article class="info-card">
+                                <span class="info-card-label">Base técnica</span>
+                                <h3>HTML, CSS, JavaScript, React e Next.js</h3>
+                                <p>Construção de interfaces semânticas, modernas e prontas para crescer.</p>
+                            </article>
+                            <article class="info-card">
+                                <span class="info-card-label">Objetivo</span>
+                                <h3>Entregar presença digital com padrão de mercado</h3>
+                                <p>Design mais forte, navegação clara e apresentação profissional.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="expertise" class="expertise-section">
+                <div class="container section-block reveal">
+                    <div class="section-heading center">
+                        <span class="section-tag">Especialidades</span>
+                        <h2>O que eu entrego com mais consistência.</h2>
+                    </div>
+
+                    <div class="cards-container">
+                        <article class="card" data-tilt>
+                            <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                            <h3>Interfaces responsivas</h3>
+                            <p>Layouts bem estruturados, fluidos e prontos para desktop e mobile com atenção à hierarquia visual.</p>
+                        </article>
+
+                        <article class="card" data-tilt>
+                            <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+                            <h3>Experiências dinâmicas</h3>
+                            <p>Interações com JavaScript moderno para dar ritmo, clareza e sofisticação à navegação.</p>
+                        </article>
+
+                        <article class="card" data-tilt>
+                            <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+                            <h3>Organização de código</h3>
+                            <p>Estrutura limpa, separação clara entre HTML, CSS e JS e manutenção mais simples do projeto.</p>
+                        </article>
+                    </div>
+
+                    <div class="stack-strip" aria-label="Tecnologias">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>Next.js</span>
+                        <span>UI Design</span>
+                        <span>Responsividade</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="showcase-section">
+                <div class="container section-block reveal">
+                    <div class="section-heading center">
+                        <span class="section-tag">Diferenciais</span>
+                        <h2>Uma apresentação com mais impacto visual e leitura de valor.</h2>
+                    </div>
+
+                    <div class="showcase-grid">
+                        <article class="showcase-card showcase-large" data-tilt>
+                            <div class="showcase-noise" aria-hidden="true"></div>
+                            <span class="showcase-label">Visual System</span>
+                            <h3>Estética tecnológica com profundidade, brilho e movimento.</h3>
+                            <p>Camadas visuais, painéis translúcidos, grids sutis e animações que deixam a navegação mais sofisticada sem perder clareza.</p>
+                        </article>
+
+                        <article class="showcase-card" data-tilt>
+                            <span class="showcase-label">Código limpo</span>
+                            <h3>Estrutura separada e mais fácil de manter</h3>
+                            <p>HTML, CSS, JS e assets organizados para evolução do projeto com mais segurança.</p>
+                        </article>
+
+                        <article class="showcase-card" data-tilt>
+                            <span class="showcase-label">Mercado atual</span>
+                            <h3>Visual mais premium para recrutadores e clientes</h3>
+                            <p>Uma linguagem visual mais forte transmite profissionalismo logo nos primeiros segundos.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="projects-section">
+                <div class="container section-block reveal">
+                    <div class="section-heading center">
+                        <span class="section-tag">Projetos</span>
+                        <h2>Alguns trabalhos que mostram meu estilo e minha evolução.</h2>
+                    </div>
+
+                    <div class="projects-carousel" aria-label="Carrossel de projetos">
+                        <div class="projects-stage">
+                            <article class="project-card-stack is-active" data-project-slide data-project-index="0">
+                                <div class="project-card-media project-image project-image-auralynne"></div>
+                                <div class="project-card-body">
+                                    <div class="project-topline">
+                                        <span class="project-badge">Landing + agendamento</span>
+                                        <span class="project-year">2024</span>
+                                    </div>
+                                    <h3>Auralynne</h3>
+                                    <p>Site e aplicativo de agendamento para manicures, com foco em clareza, conversão e experiência prática no uso.</p>
+                                    <div class="project-tags">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JavaScript</span>
+                                    </div>
+                                    <a href="https://onisaikodev.github.io/Agendador/" target="_blank" rel="noreferrer" class="project-link">
+                                        Ver projeto
+                                        <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </article>
+
+                            <article class="project-card-stack" data-project-slide data-project-index="1">
+                                <div class="project-card-media project-image project-image-dreams"></div>
+                                <div class="project-card-body">
+                                    <div class="project-topline">
+                                        <span class="project-badge">Landing page</span>
+                                        <span class="project-year">2024</span>
+                                    </div>
+                                    <h3>Dreams</h3>
+                                    <p>Landing page para vestidos de noiva com apelo visual elegante, ritmo suave e apresentação pensada para encantar.</p>
+                                    <div class="project-tags">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                    </div>
+                                    <a href="https://github.com/OnisaikoDev/dreams" target="_blank" rel="noreferrer" class="project-link">
+                                        Ver projeto
+                                        <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </article>
+
+                            <article class="project-card-stack" data-project-slide data-project-index="2">
+                                <div class="project-card-media project-image project-image-nutrem"></div>
+                                <div class="project-card-body">
+                                    <div class="project-topline">
+                                        <span class="project-badge">Aplicação web</span>
+                                        <span class="project-year">2024</span>
+                                    </div>
+                                    <h3>Nutrem</h3>
+                                    <p>Aplicação voltada para gestão nutricional com visão funcional, blocos objetivos e navegação intuitiva.</p>
+                                    <div class="project-tags">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                    </div>
+                                    <a href="https://github.com/OnisaikoDev/nutrem" target="_blank" rel="noreferrer" class="project-link">
+                                        Ver projeto
+                                        <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="projects-carousel-controls">
+                            <button type="button" class="carousel-control" data-project-prev aria-label="Projeto anterior">
+                                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                            </button>
+                            <span class="projects-counter" data-project-counter>01 / 03</span>
+                            <div class="projects-dots" aria-label="Seleção de projeto">
+                                <button type="button" class="project-dot is-active" data-project-dot="0" aria-label="Abrir projeto 1"></button>
+                                <button type="button" class="project-dot" data-project-dot="1" aria-label="Abrir projeto 2"></button>
+                                <button type="button" class="project-dot" data-project-dot="2" aria-label="Abrir projeto 3"></button>
+                            </div>
+                            <button type="button" class="carousel-control" data-project-next aria-label="Próximo projeto">
+                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience" class="experience-section">
+                <div class="container section-block reveal">
+                    <div class="section-heading center">
+                        <span class="section-tag">Experiência</span>
+                        <h2>Minha trajetória até aqui.</h2>
+                    </div>
+
+                    <div class="timeline">
+                        <article class="timeline-item">
+                            <div class="timeline-year">2026</div>
+                            <div class="timeline-content">
+                                <h3>Evolução do portfólio e posicionamento profissional</h3>
+                                <p>Refinamento da identidade visual, organização dos projetos e fortalecimento da apresentação para atrair clientes e oportunidades mais qualificadas.</p>
+                            </div>
+                        </article>
+
+                        <article class="timeline-item">
+                            <div class="timeline-year">2025</div>
+                            <div class="timeline-content">
+                                <h3>Consolidação prática em projetos front-end</h3>
+                                <p>Desenvolvimento de interfaces mais completas, aprofundando responsividade, experiência do usuário e qualidade visual em projetos autorais e freelas.</p>
+                            </div>
+                        </article>
+
+                        <article class="timeline-item">
+                            <div class="timeline-year">2024</div>
+                            <div class="timeline-content">
+                                <h3>Desenvolvedor Front-end Freelancer</h3>
+                                <p>Criação de interfaces, landing pages e aplicações web com foco em performance, estética e experiência do usuário.</p>
+                            </div>
+                        </article>
+
+                        <article class="timeline-item">
+                            <div class="timeline-year">2023</div>
+                            <div class="timeline-content">
+                                <h3>Estudos intensivos em desenvolvimento web</h3>
+                                <p>Aprofundamento em HTML, CSS, JavaScript e primeiros projetos práticos com frameworks modernos.</p>
+                            </div>
+                        </article>
+
+                        <article class="timeline-item">
+                            <div class="timeline-year">2022</div>
+                            <div class="timeline-content">
+                                <h3>Início da jornada na programação</h3>
+                                <p>Primeiros contatos com desenvolvimento web e construção dos projetos que deram base para a evolução atual.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="process-section">
+                <div class="container section-block reveal">
+                    <div class="section-heading center">
+                        <span class="section-tag">Processo</span>
+                        <h2>Como transformo uma ideia em interface.</h2>
+                    </div>
+
+                    <div class="process-grid">
+                        <article class="process-card" data-tilt>
+                            <strong>01</strong>
+                            <h3>Estratégia visual</h3>
+                            <p>Defino direção estética, referências e como transmitir mais valor para a marca ou projeto.</p>
+                        </article>
+
+                        <article class="process-card" data-tilt>
+                            <strong>02</strong>
+                            <h3>Estrutura e layout</h3>
+                            <p>Organizo a informação para a navegação ficar clara, objetiva e naturalmente mais convincente.</p>
+                        </article>
+
+                        <article class="process-card" data-tilt>
+                            <strong>03</strong>
+                            <h3>Interação e acabamento</h3>
+                            <p>Aplico movimento, detalhes de interface e refinamento visual para deixar a experiência memorável.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="contact-section">
+                <div class="container section-block reveal">
+                    <div class="contact-banner">
+                        <div>
+                            <span class="section-tag">Contato</span>
+                            <h2>Se você quer um portfólio, landing page ou interface com mais presença, vamos conversar.</h2>
+                            <p>Estou disponível para projetos, parcerias e oportunidades na área de front-end.</p>
+                        </div>
+                        <a href="mailto:matheusd.rosa00@gmail.com" class="cta-button primary">Enviar e-mail</a>
+                    </div>
+
+                    <div class="contact-grid">
+                        <article class="contact-card">
+                            <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                            <h3>E-mail</h3>
+                            <p><a href="mailto:matheusd.rosa00@gmail.com">matheusd.rosa00@gmail.com</a></p>
+                        </article>
+
+                        <article class="contact-card">
+                            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                            <h3>Telefone</h3>
+                            <p><a href="tel:+5554992415589">(+55) 54 99241-5589</a></p>
+                        </article>
+
+                        <article class="contact-card">
+                            <i class="fa-brands fa-github" aria-hidden="true"></i>
+                            <h3>GitHub</h3>
+                            <p><a href="https://github.com/OnisaikoDev" target="_blank" rel="noreferrer">github.com/OnisaikoDev</a></p>
+                        </article>
+
+                        <article class="contact-card">
+                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                            <h3>Instagram</h3>
+                            <p><a href="https://instagram.com/matheusd_end" target="_blank" rel="noreferrer">@matheusd_end</a></p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer-container">
+                <p>&copy; <span id="current-year"></span> Matheus Daniel Rosa. Todos os direitos reservados.</p>
+                <a href="#hero">Voltar ao topo</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
