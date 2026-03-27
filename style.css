@@ -334,6 +334,11 @@ nav a.active {
     position: relative;
 }
 
+.project-image.auralynne {
+    background-image: url('assets/auralynne.png');
+    background-size: cover;
+    background-position: center;
+}
 
 .project-image.dreams {
     background-image: url('assets/dreams.jpg');
