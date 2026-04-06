@@ -797,6 +797,9 @@ section {
         linear-gradient(180deg, rgba(3, 11, 21, 0) 0%, rgba(3, 11, 21, 0.16) 44%, rgba(3, 11, 21, 0.7) 100%),
         linear-gradient(130deg, rgba(84, 219, 255, 0.1), transparent 46%, rgba(255, 174, 87, 0.08));
 }
+.project-image-auralynnen {
+    background-image: url("../assets/images/projects/aura.png");
+}
 
 .project-image-auralynne {
     background-image: url("../assets/images/projects/auralynne.png");
